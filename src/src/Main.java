@@ -30,7 +30,7 @@ public class Main extends Application {
         try {
 
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(Main.class.getResource("../layout/main.fxml"));
+            loader.setLocation(Main.class.getResource("main.fxml"));
 
             root_layout = (GridPane) loader.load();
             root_layout.setPrefSize(512,256);
@@ -39,7 +39,7 @@ public class Main extends Application {
             primary_stage.setScene(scene);
             primary_stage.show();
 
-            controller = new Controller(root_layout, primary_stage);
+            //controller = new Controller(root_layout, primary_stage);
 
         } catch (IOException e) {
             e.printStackTrace();
